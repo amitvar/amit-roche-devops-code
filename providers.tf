@@ -1,11 +1,11 @@
 terraform {
 
   backend "s3" {
-    bucket = "amit-roche-tf-buck"
-    key = "dev/amit/terraform.tfstate"
+    bucket         = "amit-roche-tf-buck"
+    key            = "dev/amit/terraform.tfstate"
     dynamodb_table = "amit-roche-tb1"
-    region = "ap-southeast-2"
-    encrypt = true
+    region         = "ap-southeast-2"
+    encrypt        = true
   }
   required_providers {
     aws = {

@@ -1,10 +1,11 @@
 # creating ec2 VM
 resource "aws_instance" "amit-devops" {
-  ami           = "ami-0a25a306450a2cba3"
-  instance_type = "t2.nano"
-  key_name      = "roche-key"
+  #ami           = "ami-0a25a306450a2cba3"
+  ami           = var.amit-ami-id
+  instance_type = var.vm-size
+  key_name      = var.ec2-key-name
   tags = {
-    "Name" = "amit-vm-1"
+    "Name" = var.vm-name
   }
 }
 
