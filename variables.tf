@@ -23,11 +23,11 @@ variable "ec2-key-name" {
 }
 
 variable "private-key-algo" {
-    type = string
-  
+  type = string
+
 }
 
 variable "key-size" {
-    type = string
-  
+  type = string
+
 }
