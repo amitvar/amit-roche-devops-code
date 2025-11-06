@@ -16,10 +16,10 @@ resource "aws_instance" "amit-devops" {
 
   }
   connection {
-    type = "ssh"
-    user = "ec2-user"
-    host = self.public_ip
-    timeout = "5m"
+    type    = "ssh"
+    user    = "ec2-user"
+    host    = self.public_ip
+    timeout = "3m"
     #content of private key data
     private_key = tls_private_key.example.private_key_pem
   }

@@ -15,7 +15,7 @@ resource "local_file" "private-key-data" {
 
 #sending public key to aws cloud account
 resource "aws_key_pair" "example" {
-  key_name   = "amit-privatekey"
   public_key = tls_private_key.example.public_key_openssh
+  key_name   = var.ec2-key-name
 
 }
