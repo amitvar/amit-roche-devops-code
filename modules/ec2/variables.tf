@@ -31,3 +31,6 @@ variable "key-size" {
   type = string
 
 }
+
+variable "my-vpc-id" {}
+variable "my-sec-group-name" {}
