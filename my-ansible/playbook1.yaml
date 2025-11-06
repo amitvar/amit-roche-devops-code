@@ -1,0 +1,16 @@
+---
+- name: defining target group
+  hosts: web-servers
+  # become true means sudo access / root access
+  become: true
+  tasks: 
+  - name: testing ping module
+    ping:
+
+  - name: running sample commands
+    command: date
+
+  - name: installing some software in target amazon linux machine
+    yum:
+      name: httpd
+      state: present
