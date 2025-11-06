@@ -33,5 +33,6 @@ module "my-amit-module-ec2" {
     key-size = 4096
     my-vpc-id = "vpc-02d56e9aa1ce2f114"
     my-sec-group-name = "amit-bymode-sec"
+    novm = 2
   
 }
