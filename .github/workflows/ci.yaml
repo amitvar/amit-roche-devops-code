@@ -79,7 +79,7 @@ jobs:
       uses: actions/download-artifact@v5
       with:
         name: amit-github-artifact
-    - name: listing out structure if downloading files
+    - name: displaying structure if downloading files
       run: ls -R
 
     - name: installing terraform
