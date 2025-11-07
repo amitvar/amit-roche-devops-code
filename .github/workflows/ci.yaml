@@ -117,7 +117,7 @@ jobs:
     - name: checkout github code of terraform only 
       uses: actions/checkout@v5
       with:
-        ref: master 
+        ref: main 
         sparse-checkout: |
           modules 
 
