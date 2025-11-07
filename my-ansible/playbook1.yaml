@@ -3,7 +3,7 @@
   hosts: amit-roche
   become: true
   roles:
-  - apace-webserver
+  - apache-webserver
   # # defining variables
   # vars:
   #   x: httpd
